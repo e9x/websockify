@@ -1,6 +1,6 @@
 import { websockify } from "./websockify.js";
 import { Command } from "commander";
-import { createServer } from "http";
+import { createServer } from "node:http";
 import { WebSocketServer } from "ws";
 
 const program = new Command();
