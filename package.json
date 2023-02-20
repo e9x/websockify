@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git://github.com/e9x/websockify.git"
   },
+  "main": "dist/websockify.js",
   "type": "commonjs",
   "files": [
     "dist"
