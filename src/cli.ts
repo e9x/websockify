@@ -45,7 +45,7 @@ program
       });
 
       res.write(
-        "This is a websockify2 server that only accepts WebSocket traffic."
+        "This is a websockify server that only accepts WebSocket traffic."
       );
 
       res.end();

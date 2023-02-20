@@ -3,7 +3,7 @@ import { createConnection } from "node:net";
 import type { NetConnectOpts } from "node:net";
 import type { RawData, WebSocket } from "ws";
 
-const debugOutput = debug("websockify2");
+const debugOutput = debug("websockify");
 
 const isBufferArray = (msg: RawData): msg is Buffer[] =>
   Array.isArray(msg) && Buffer.isBuffer(msg[0]);

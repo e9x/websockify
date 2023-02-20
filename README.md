@@ -1,4 +1,4 @@
-# websockify2
+# websockify
 
 A port of [websockify-js](https://github.com/novnc/websockify-js) to modern NodeJS and TypeScript.
 
@@ -24,5 +24,5 @@ Options:
 ### With debugging:
 
 ```sh
-DEBUG=websockify2 ./bin.js --source 127.0.0.1:5901 --listen 127.0.0.1:9999
+DEBUG=websockify ./bin.js --source 127.0.0.1:5901 --listen 127.0.0.1:9999
 ```
