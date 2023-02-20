@@ -1,26 +1,27 @@
 {
   "name": "@e9x/websockify",
   "version": "1.0.0",
-  "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch"
-  },
-  "author": "https://github.com/e9x",
-  "contributors": [
-    "http://github.com/kanaka"
-  ],
   "description": "websockify is a WebSocket-to-TCP proxy/bridge",
   "license": "LGPL-3.0",
-  "files": [
-    "dist"
+  "author": "https://github.com/e9x",
+  "contributors": [
+    "http://github.com/e9x",
+    "http://github.com/kanaka"
   ],
   "repository": {
     "type": "git",
     "url": "git://github.com/e9x/websockify.git"
   },
   "type": "commonjs",
+  "files": [
+    "dist"
+  ],
   "bin": {
     "websockify": "bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
   },
   "dependencies": {
     "commander": "^10.0.0",
