@@ -19,7 +19,7 @@ export function websockify(client: WebSocket, destination: NetConnectOpts) {
   target.on("data", (data) => {
     try {
       client.send(data);
-    } catch (e) {
+    } catch (err) {
       debugOutput("Client closed, cleaning up target");
       target.end();
     }
@@ -41,12 +41,12 @@ export function websockify(client: WebSocket, destination: NetConnectOpts) {
   });
 
   client.on("close", (code, reason) => {
-    debugOutput("WebSocket client disconnected: " + code + " [" + reason + "]");
+    debugOutput("WebSocket client disconnected:", code, `[${reason}]`);
     target.end();
   });
 
-  client.on("error", (a) => {
-    debugOutput("WebSocket client error: " + a);
+  client.on("error", (code) => {
+    debugOutput("WebSocket client error:", code);
     target.end();
   });
 }
